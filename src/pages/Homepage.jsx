@@ -7,12 +7,12 @@ function Homepage() {
     <div className="welcomeCont">
       <h1>Welcome to Brainare – The Ultimate Millionaire Quiz Challenge!</h1>
       <p>
-        Think you have what it takes to climb to the top and claim the ultimate
-        prize? Brainare is the ultimate test of knowledge, strategy, and nerve.
-        Answer increasingly <strong>{numOfQuestions}</strong> difficult
-        questions, use lifelines wisely, and see if you can make it all the way
-        to the million! Will you rise to the challenge or crack under the
-        pressure? Play now and prove you're the true quiz champion!
+        Think you have what it takes to climb to the top and prove your
+        knowledge? Brainaire is the ultimate test of trivia, speed, and
+        accuracy. Answer <strong>{numOfQuestions}</strong> challenging
+        questions, stay sharp under pressure, and see if you can achieve the
+        highest score! Will you rise to the challenge or fall short? Play now
+        and show the world you're the true quiz champion!
       </p>
 
       <Button
