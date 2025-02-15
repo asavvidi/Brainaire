@@ -1,6 +1,8 @@
 import Button from "../components/Button";
+import { useQuiz } from "../contexts/QuizContext";
 
-function Homepage({ dispatch, numOfQuestions }) {
+function Homepage() {
+  const { dispatch, numOfQuestions } = useQuiz();
   return (
     <div className="welcomeCont">
       <h1>Welcome to Brainare – The Ultimate Millionaire Quiz Challenge!</h1>

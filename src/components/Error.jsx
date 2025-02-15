@@ -1,6 +1,8 @@
 import Button from "./Button";
+import { useQuiz } from "../contexts/QuizContext";
 
-function Error({ dispatch }) {
+function Error() {
+  const { dispatch } = useQuiz();
   return (
     <div className="errorCont">
       <p>

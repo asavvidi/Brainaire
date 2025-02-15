@@ -1,6 +1,8 @@
 import Button from "../components/Button";
+import { useQuiz } from "../contexts/QuizContext";
 
-function FinishApp({ dispatch, points, highscore, maxPoints }) {
+function FinishApp() {
+  const { dispatch, points, highscore, maxPoints } = useQuiz();
   const percentage = (points / maxPoints) * 100;
 
   let emoji;
