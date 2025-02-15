@@ -73,7 +73,7 @@ http://localhost:5173
 
 ## How to Play 🏆
 
-1. **Click "Start Quiz"** to begin.
+1. **Click "Start"** to begin the quiz.
 2. **Select an answer**.
 3. **Click "Next"** to proceed to the next question.
 4. **Complete all questions** to see your final score.
