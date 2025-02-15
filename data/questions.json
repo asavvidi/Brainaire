@@ -1,0 +1,189 @@
+{
+  "questions": [
+    {
+      "question": "Who was the first President of the United States?",
+      "options": [
+        "Abraham Lincoln",
+        "Thomas Jefferson",
+        "George Washington",
+        "John Adams"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "options": [
+        "Amazon River",
+        "Yangtze River",
+        "Mississippi River",
+        "Nile River"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is the chemical symbol for water?",
+      "options": ["O2", "H2O", "CO2", "HO"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["Earth", "Mars", "Jupiter", "Venus"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which year did World War II end?",
+      "options": ["1942", "1945", "1950", "1939"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "options": ["Seoul", "Beijing", "Tokyo", "Bangkok"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the hardest natural substance on Earth?",
+      "options": ["Gold", "Iron", "Diamond", "Platinum"],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "Which is the largest ocean on Earth?",
+      "options": [
+        "Atlantic Ocean",
+        "Indian Ocean",
+        "Pacific Ocean",
+        "Arctic Ocean"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "Who painted the Mona Lisa?",
+      "options": [
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Claude Monet",
+        "Leonardo da Vinci"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which gas do plants absorb from the atmosphere?",
+      "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which continent has the most countries?",
+      "options": ["Asia", "Africa", "Europe", "South America"],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What is the boiling point of water at sea level?",
+      "options": ["90°C", "100°C", "110°C", "120°C"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Who discovered gravity?",
+      "options": [
+        "Albert Einstein",
+        "Isaac Newton",
+        "Galileo Galilei",
+        "Nikola Tesla"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What is the capital city of Australia?",
+      "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which metal is liquid at room temperature?",
+      "options": ["Gold", "Mercury", "Silver", "Iron"],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "Who wrote 'Hamlet'?",
+      "options": [
+        "Charles Dickens",
+        "William Shakespeare",
+        "Jane Austen",
+        "Mark Twain"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which is the tallest mountain in the world?",
+      "options": ["K2", "Mount Kilimanjaro", "Mount Everest", "Mont Blanc"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which animal is known as the King of the Jungle?",
+      "options": ["Tiger", "Lion", "Elephant", "Leopard"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the smallest unit of matter?",
+      "options": ["Molecule", "Atom", "Electron", "Proton"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Who invented the telephone?",
+      "options": [
+        "Alexander Graham Bell",
+        "Thomas Edison",
+        "Nikola Tesla",
+        "James Watt"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "Which planet is closest to the Sun?",
+      "options": ["Venus", "Earth", "Mercury", "Mars"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the most widely spoken language in the world?",
+      "options": ["English", "Mandarin Chinese", "Spanish", "Hindi"],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "Which country is famous for inventing pizza?",
+      "options": ["France", "Italy", "United States", "Greece"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How many sides does a hexagon have?",
+      "options": ["4", "5", "6", "7"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the name of the fairy tale character who leaves a glass slipper at the royal ball?",
+      "options": ["Snow White", "Cinderella", "Rapunzel", "Sleeping Beauty"],
+      "correctOption": 1,
+      "points": 10
+    }
+  ]
+}

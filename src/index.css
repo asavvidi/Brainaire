@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+:root {
+  --header-font: "Prata", serif;
+  --header-color: #fff5f5;
+  --highlight-font: "Noto Sans Mono", monospace;
+  --page: "Roboto Flex", sans-serif;
+  --start-button: "Bungee", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+      rgba(200, 200, 200, 0),
+      rgba(200, 200, 200, 0)
+    ),
+    url("quiz-background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow-y: auto;
+  font-family: var(--page);
+  color: var(--header-color);
+
+  & .btn {
+    padding: 1rem;
+    color: #fff5f5;
+    font-family: var(--start-button);
+    background: linear-gradient(90deg, #1a1a40, #3a0ca3);
+    border-radius: 10px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  & .startBtn {
+    max-width: 300px;
+    width: 80%;
+    margin-top: 8rem;
+    font-size: 2rem;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.9);
+  }
+  & .startBtn:hover {
+    background-color: #bfff00;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 1);
+  }
+  & .backBtn {
+    max-width: 300px;
+    font-size: 2rem;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.9);
+  }
+  & .restartBtn {
+    margin-top: 10rem;
+    font-size: 2rem;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.9);
+  }
+
+  & .errorCont {
+    font-size: 3rem;
+  }
+
+  & .loaderCont {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+  }
+
+  & .page {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 5rem;
+    height: 100vh;
+    gap: 2rem;
+    justify-content: space-between;
+    text-align: center;
+
+    & .welcomeCont {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      & h1 {
+        font-size: 2rem;
+        font-family: var(--header-font);
+        color: var(--header-color);
+        text-transform: uppercase;
+        width: 100%;
+      }
+      & p {
+        font-size: 1.2rem;
+        font-family: var(--page);
+        color: var(--header-color);
+        width: 80%;
+        line-height: 1.5;
+      }
+    }
+
+    & .finishPage {
+      display: flex;
+      flex-direction: column;
+
+      gap: 2rem;
+      align-items: center;
+      & p {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem 0rem;
+
+    & .copyright-container {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      color: var(--header-color);
+      font-size: 20px;
+    }
+    & .social-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+
+      & img {
+        background-color: white;
+        border-radius: 10px;
+      }
+    }
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-height: 15dvh;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+
+    & img {
+      width: 14rem;
+      height: 5rem;
+      border-radius: 10%;
+    }
+
+    & h1 {
+      color: var(--header-color);
+      font-family: var(--header-font);
+      word-spacing: 4px;
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.quizApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  height: auto;
+  width: 100%;
+}
+
+.progressCont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+  & progress {
+    flex: 1;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  & progress::-webkit-progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  & progress::-webkit-progress-value {
+    background-color: #4caf50;
+    border-radius: 5px;
+  }
+
+  & p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+.questionCont {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: auto;
+
+  & h4 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  & .optionsCont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  & .optionBtn {
+    font-size: 1.5rem;
+  }
+  .optionBtn:hover {
+    background: #0056b3;
+    transform: scaleY(1.2);
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.9);
+  }
+}
