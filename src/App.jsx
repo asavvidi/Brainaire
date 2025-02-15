@@ -44,13 +44,14 @@ function reducer(state, action) {
 
     case "playerAnswered":
       const question = state.questions.at(state.index);
+      if (!question) return state;
+
+      const isCorrect = action.payload === question.correctOption;
       return {
         ...state,
         answer: action.payload,
-        points:
-          action.payload === question.correctOption
-            ? state.points + state.points
-            : state.points,
+        points: isCorrect ? state.points + question.points : state.points,
+        secondsRemaining: state.secondsRemaining - (isCorrect ? 0 : 10),
       };
     case "nextQuestion":
       return {
@@ -69,6 +70,12 @@ function reducer(state, action) {
     case "restart": {
       return { ...initialState, status: "ready", questions: state.questions };
     }
+    case "tick":
+      return {
+        ...state,
+        secondsRemaining: state.secondsRemaining - 1,
+        status: state.secondsRemaining === 0 ? "finished" : state.status,
+      };
     default: {
       throw new Error(`Action unknown`);
     }
@@ -80,7 +87,7 @@ function App() {
     dispatch,
   ] = useReducer(reducer, initialState);
 
-  const numOfQuestions = questions.length;
+  const numOfQuestions = 10;
   const maxPoints = questions.reduce((prev, curr) => {
     return prev + curr.points;
   }, 0);

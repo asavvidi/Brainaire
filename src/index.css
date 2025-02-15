@@ -9,6 +9,7 @@
   --highlight-font: "Noto Sans Mono", monospace;
   --page: "Roboto Flex", sans-serif;
   --start-button: "Bungee", sans-serif;
+  --timer--background: blue;
 }
 
 * {
@@ -18,11 +19,7 @@
 }
 
 body {
-  background-image: linear-gradient(
-      rgba(200, 200, 200, 0),
-      rgba(200, 200, 200, 0)
-    ),
-    url("quiz-background.jpg");
+  background: linear-gradient(135deg, #c0e8ff, #004080);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -47,7 +44,6 @@ body {
     width: 80%;
     margin-top: 8rem;
     font-size: 2rem;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.9);
   }
   & .startBtn:hover {
     background-color: #bfff00;
@@ -243,7 +239,38 @@ body {
   }
   .optionBtn:hover {
     background: #0056b3;
-    transform: scaleY(1.2);
+    transform: scaleY(1.05);
     box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.9);
   }
+  .answer {
+    transform: translateX(1rem);
+  }
+  .optionBtn.correct {
+    background: linear-gradient(90deg, #a8e6cf, #2ecc71);
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(255, 152, 0, 0.8);
+  }
+
+  .optionBtn.wrong {
+    background: linear-gradient(90deg, #ffb199, #ff3d00);
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(255, 61, 0, 0.8);
+  }
+}
+
+.timer {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  background: linear-gradient(90deg, #1a1a40, #3a0ca3);
+}
+
+.nextBtn {
+  font-size: 1.2rem;
+}
+.nextBtn:hover {
+  transform: scaleY(1.2);
+  padding: 1rem 2rem;
+  background: #0056b3;
 }
